@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sakura</title>
+	<link href="css/css.css" rel="stylesheet">
+	<style>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+		}
+
+		.index>a {
+			padding: 20px;
+			margin: 20px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.index {
+			text-align: center;
+
+		}
+
+		img {
+			-webkit-transform: scale(.8);
+			-moz-transform: scale(.8);
+			-ms-transform: scale(.8);
+			-o-transform: scale(.8);
+			transform: scale(.8);
+			transition-duration: .5s;
+		}
+
+		img:hover {
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+			transform: scale(1);
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="index">
+		<a href="interior.html">
+    <img src="images/inter.png" alt="Интерьер">
+  </a>
+		<a href="mebel.html">
+    <img src="images/mebel.png" alt="Мебель">
+  </a>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/JQ.js"></script>
+
+	<script>
+		$('.index').css('margin-top', (($(document).height() - $('.index').height()) / 2) + 'px');
+	</script>
+
+</body>
+
+</html>
